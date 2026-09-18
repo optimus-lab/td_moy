@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0d10"><meta name="description" content="Tarjeta digital NFC personal">
+<title>Perfil Digital NFC</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="page"><section class="card">
+<div class="glow"></div><header class="profile">
+<div class="avatar-wrap"><img id="avatar" class="avatar" src="assets/perfil.jpg" alt="Foto de perfil"></div>
+<div class="status">● DISPONIBLE</div><h1 id="name">Moy</h1><p id="role">Perfil profesional</p><p id="bio" class="bio">Conecta conmigo y conoce mis proyectos.</p>
+</header>
+<section class="actions">
+<a id="whatsapp" class="action primary" href="#" target="_blank" rel="noopener">💬 <span>WhatsApp</span></a>
+<a id="phone" class="action" href="#">📞 <span>Teléfono</span></a>
+<a id="email" class="action" href="#">✉️ <span>Email</span></a>
+<a id="facebook" class="action" href="#" target="_blank" rel="noopener">f <span>Facebook</span></a>
+<button id="projectsBtn" class="action" type="button">▦ <span>Mis proyectos</span></button>
+<button id="saveContact" class="action" type="button">＋ <span>Guardar contacto</span></button>
+</section><div class="share-row"><button id="shareBtn" class="ghost" type="button">Compartir perfil</button></div>
+<footer>Perfil digital conectado por NFC</footer></section></main>
+<div id="modal" class="modal" hidden><div class="modal-bg" data-close></div><section class="gallery-panel" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+<div class="modal-head"><div><span class="eyebrow">PORTAFOLIO</span><h2 id="galleryTitle">Mis proyectos</h2></div><button class="close" type="button" data-close aria-label="Cerrar">×</button></div>
+<div id="gallery" class="gallery"></div></section></div>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
