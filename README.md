@@ -2,16 +2,33 @@
 
 Tarjeta personal mobile-first para abrir desde un chip NFC.
 
-### Incluye
-- WhatsApp, teléfono, email y Facebook.
-- Galería de proyectos.
-- Compartir perfil.
-- Descargar contacto en formato VCF.
-- Sin base de datos ni servidor.
+## Estructura de imágenes obligatoria
 
-### Personalización
-Edita `config.js` para cambiar todos los datos del perfil.
-Coloca la foto en `assets/perfil.jpg` y proyectos en `assets/proyectos/`.
+```
+assets/
+├── perfil.jpg
+└── proyectos/
+    ├── proyecto-01.jpg
+    ├── proyecto-02.jpg
+    ├── proyecto-03.jpg
+    ├── proyecto-04.jpg
+    ├── proyecto-05.jpg
+    └── proyecto-06.jpg
+```
 
-### GitHub Pages
-Configura **Settings → Pages → Deploy from a branch → main → /(root)**.
+Las rutas usadas por la aplicación son relativas a GitHub Pages:
+- `./assets/perfil.jpg`
+- `./assets/proyectos/proyecto-01.jpg` hasta `proyecto-06.jpg`
+
+## Importante
+
+El código ya está corregido, pero GitHub actualmente no contiene la carpeta `assets/`. Las imágenes adjuntas en ChatGPT no se convierten automáticamente en archivos públicos del repositorio.
+
+El paquete `td_moy_imagenes_listas.zip` contiene las 7 imágenes con los nombres y carpetas exactos. Descomprímelo y sube la carpeta `assets` al repositorio.
+
+## GitHub Pages
+
+En GitHub:
+**Settings → Pages → Deploy from a branch → main → /(root)**.
+
+No se necesita base de datos ni servidor.
